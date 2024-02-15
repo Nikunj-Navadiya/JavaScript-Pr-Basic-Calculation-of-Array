@@ -1,0 +1,19 @@
+<!-- Find duplicate element in array -->
+
+<script type="text/javascript">
+
+    var arr = [30, 20, 10, 1, 2, 3, 30, 20, 10]
+    let ans = []
+    let index = 0
+
+    for (var i = 0; i < arr.length; i++) {
+        for (j = i + 1; j < arr.length; j++) {
+            if (arr[i] == arr[j] && !ans.includes(arr[i])) {
+                ans[index] = arr[i];
+                index++;
+            }
+        }
+    }
+    console.warn(ans);
+
+</script>
